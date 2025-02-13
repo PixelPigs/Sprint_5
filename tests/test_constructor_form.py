@@ -1,11 +1,3 @@
-import pytest
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.common.by import By
-
-from test_data import *
-from locators import *
 from conftest import *
 
 

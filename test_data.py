@@ -25,8 +25,6 @@ def valid_email(email):
 
 
 # Тестовые данные для формы регистрации/авторизации
-name = 'Ольга'
-gen_email = generate_email()
-gen_password = generate_password()
+test_name = 'Ольга'
 test_email = 'boichenkoolga8112@ya.ru'
 test_password = "123456"

@@ -1,7 +1,9 @@
 from selenium.webdriver.common.by import By
 
+BASE_URL = 'https://stellarburgers.nomoreparties.site/'
+
 # Форма Регистрации
-page_registration = 'https://stellarburgers.nomoreparties.site/register'
+PAGE_REGISTRATION = f'{BASE_URL}register'
 REG_NAME = By.XPATH, ".//label[text()='Имя']//parent::*/input[@type='text' and @name='name']"
 EMAIL = By.XPATH, ".//label[text()='Email']//parent::*/input[@type='text' and @name='name']"
 PASSWORD = By.NAME, "Пароль"
@@ -10,7 +12,7 @@ ERROR_PASSWORD = By.XPATH, ".//p[contains(@class, 'input__error')]"
 BUTTON_ENTER_FROM_REG = By.XPATH, ".//button[text()='Войти']"
 
 # Форма Входа
-page_login = 'https://stellarburgers.nomoreparties.site/login'
+PAGE_LOGIN = f'{BASE_URL}login'
 LOGIN_EMAIL = By.XPATH, ".//label[text()='Email']//parent::*/input[@type='text' and @name='name']"
 LOGIN_ACCOUNT = By.XPATH, ".//button[text()='Войти в аккаунт']"
 LOGIN_PASSWORD = By.XPATH, ".//input[@type='password' and @name='Пароль']"
@@ -18,16 +20,16 @@ LOGIN_BUTTON = By.XPATH, ".//button[text()='Войти']"
 HEADER_LOGIN = By.XPATH, "//h2[text()='Вход']"
 
 # Восстановление пароля
-page_password_recovery = 'https://stellarburgers.nomoreparties.site/forgot-password'
+PAGE_PASSWORD_RECOVERY = f'{BASE_URL}forgot-password'
 BUTTON_PASSWORD_RECOVERY = By.CLASS_NAME, "Auth_link__1fOlj"
 BUTTON_LOGIN_FROM_RECOVERY = By.XPATH, ".//p/a[text()='Войти']"
 
 # Страница Личный кабинет
-page_profile = 'https://stellarburgers.nomoreparties.site/account/profile'
+PAGE_PROFILE = f'{BASE_URL}account/profile'
 BUTTON_PERSONAL_ACCOUNT = By.PARTIAL_LINK_TEXT, "Личный Кабинет"
 
 # Главная страница StellarBurgers
-main_page = 'https://stellarburgers.nomoreparties.site/'
+MAIN_PAGE = BASE_URL
 BUTTON_ORDER = By.XPATH, ".//button[text()='Оформить заказ']"
 
 # Переход в конструктор
